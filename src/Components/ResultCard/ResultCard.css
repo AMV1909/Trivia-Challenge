@@ -1,0 +1,40 @@
+.ts__resultCard {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.correct {
+    background-color: #77dd77;
+}
+
+.incorrect {
+    background-color: #ff6961;
+}
+
+.ts__resultCard h1 {
+    font-size: 2rem;
+}
+
+.ts__resultCard p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 400px) {
+    .ts__resultCard {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .ts__resultCard {
+        gap: 0.5rem;
+    }
+}

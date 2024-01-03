@@ -1,0 +1,36 @@
+.ts__questionCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+
+    font-size: 1.5rem;
+}
+
+.ts__questionCard header h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.ts__questionCard section {
+    height: 45vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+
+    border: 1px solid black;
+    border-radius: 0.5rem;
+
+    padding: 1rem;
+
+    background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .ts__questionCard section {
+        height: 35vh;
+    }
+}
