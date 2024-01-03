@@ -13,7 +13,11 @@ export function Result() {
     const questions = useAppSelector((state) => state.questions);
 
     useEffect(() => {
-        if (!location.state || !location.state.score) {
+        if (
+            !location.state ||
+            !location.state.score ||
+            questions.length === 0
+        ) {
             return navigate("/");
         }
 
